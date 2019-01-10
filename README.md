@@ -34,4 +34,4 @@ You can of cource use erb-hiera-generator without docker when all dependencies a
 ./erb-hiera-generator.rb path/to/hiera.yaml path/to/template path/to/output
 ```
 
-Be aware of the fact that erb-hiera-generator will overwrite the outputfile.
+Be aware of the fact that erb-hiera-generator will overwrite the output file.
