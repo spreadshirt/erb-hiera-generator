@@ -28,7 +28,7 @@ Attention: Make sure the file `$(pwd)/test.result` exists **before** running the
 
 b) Native usage
 
-You can of cource use erb-hiera-generator without docker when all dependencies are installed.
+You can of course use erb-hiera-generator without docker when all dependencies are installed.  (`gem install facter hiera` should do that for you.)
 
 ```
 ./erb-hiera-generator.rb path/to/hiera.yaml path/to/template path/to/output
