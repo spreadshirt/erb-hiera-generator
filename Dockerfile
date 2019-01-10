@@ -1,14 +1,8 @@
 FROM alpine:3.8
 
-RUN apk update
+RUN apk update && apk add ruby
 
-RUN apk add bash py-pip ruby-irb ruby-rdoc ruby ncurses shadow libxml2-utils
-
-RUN pip install shyaml
-RUN pip install yamllint
-
-RUN gem install facter
-RUN gem install hiera
+RUN gem install --no-document facter hiera
 
 RUN mkdir -p /opt/erb-hiera-generator && mkdir -p /params
 
