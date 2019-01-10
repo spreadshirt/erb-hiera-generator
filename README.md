@@ -2,6 +2,12 @@
 
 Ruby script to use Puppets erb/hiera features without the need to have puppet installed.
 
+It can `puppet apply --hiera_config hiera.yaml --execute "file {'/tmp/oops': content => template('$PWD/my-template.erb')}"`
+and commands similar to it.
+
+We use it at Spreadshirt to generate Kubernetes configuration for
+different environments, including secrets from a credentials store.
+
 ## Preparation
 
 We suggest to use erb-hiera-generator with docker to avoid dependency problems on your local machine.
