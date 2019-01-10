@@ -94,7 +94,7 @@ class FakeHieraScope
   def get_binding(need_facter = false)
     if need_facter
       # NOTE: This might be cause for slowness, reenable this in case
-      #       sockpuppet is slow in the future.
+      #       erb-hiera-generator.rb is slow in the future.
       #STDERR.puts "[WARNING] needs all facts, possible performance impact"
       Facter.to_hash.each do |k, v|
         instance_variable_set "@#{k}", v
